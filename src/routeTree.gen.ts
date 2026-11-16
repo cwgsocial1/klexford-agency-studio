@@ -10,33 +10,285 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as BecomeAnExpertRouteImport } from './routes/become-an-expert'
+import { Route as BrandingCreativeRouteImport } from './routes/branding-creative'
+import { Route as CrmAutomationRouteImport } from './routes/crm-automation'
+import { Route as ExpertsRouteImport } from './routes/experts'
+import { Route as GrowthStudioRouteImport } from './routes/growth-studio'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ResourcesRouteImport } from './routes/resources'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as StartAProjectRouteImport } from './routes/start-a-project'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as WebsiteDevelopmentRouteImport } from './routes/website-development'
+import { Route as WorkRouteImport } from './routes/work'
+import { Route as BookAuthorServicesIndexRouteImport } from './routes/book-author-services.index'
+import { Route as BookAuthorServicesBookMarketingRouteImport } from './routes/book-author-services.book-marketing'
+import { Route as ToolsIndexRouteImport } from './routes/tools.index'
+import { Route as ToolsVisibilityCheckRouteImport } from './routes/tools.visibility-check'
+import { Route as WhoWeHelpIndexRouteImport } from './routes/who-we-help.index'
+import { Route as WhoWeHelpAudienceRouteImport } from './routes/who-we-help.$audience'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BecomeAnExpertRoute = BecomeAnExpertRouteImport.update({
+  id: '/become-an-expert',
+  path: '/become-an-expert',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BrandingCreativeRoute = BrandingCreativeRouteImport.update({
+  id: '/branding-creative',
+  path: '/branding-creative',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CrmAutomationRoute = CrmAutomationRouteImport.update({
+  id: '/crm-automation',
+  path: '/crm-automation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExpertsRoute = ExpertsRouteImport.update({
+  id: '/experts',
+  path: '/experts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GrowthStudioRoute = GrowthStudioRouteImport.update({
+  id: '/growth-studio',
+  path: '/growth-studio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResourcesRoute = ResourcesRouteImport.update({
+  id: '/resources',
+  path: '/resources',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StartAProjectRoute = StartAProjectRouteImport.update({
+  id: '/start-a-project',
+  path: '/start-a-project',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WebsiteDevelopmentRoute = WebsiteDevelopmentRouteImport.update({
+  id: '/website-development',
+  path: '/website-development',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkRoute = WorkRouteImport.update({
+  id: '/work',
+  path: '/work',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookAuthorServicesIndexRoute = BookAuthorServicesIndexRouteImport.update({
+  id: '/book-author-services/',
+  path: '/book-author-services/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookAuthorServicesBookMarketingRoute =
+  BookAuthorServicesBookMarketingRouteImport.update({
+    id: '/book-author-services/book-marketing',
+    path: '/book-author-services/book-marketing',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ToolsIndexRoute = ToolsIndexRouteImport.update({
+  id: '/tools/',
+  path: '/tools/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsVisibilityCheckRoute = ToolsVisibilityCheckRouteImport.update({
+  id: '/tools/visibility-check',
+  path: '/tools/visibility-check',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhoWeHelpIndexRoute = WhoWeHelpIndexRouteImport.update({
+  id: '/who-we-help/',
+  path: '/who-we-help/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhoWeHelpAudienceRoute = WhoWeHelpAudienceRouteImport.update({
+  id: '/who-we-help/$audience',
+  path: '/who-we-help/$audience',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/become-an-expert': typeof BecomeAnExpertRoute
+  '/branding-creative': typeof BrandingCreativeRoute
+  '/crm-automation': typeof CrmAutomationRoute
+  '/experts': typeof ExpertsRoute
+  '/growth-studio': typeof GrowthStudioRoute
+  '/privacy': typeof PrivacyRoute
+  '/resources': typeof ResourcesRoute
+  '/services': typeof ServicesRoute
+  '/start-a-project': typeof StartAProjectRoute
+  '/terms': typeof TermsRoute
+  '/website-development': typeof WebsiteDevelopmentRoute
+  '/work': typeof WorkRoute
+  '/book-author-services/book-marketing': typeof BookAuthorServicesBookMarketingRoute
+  '/tools/visibility-check': typeof ToolsVisibilityCheckRoute
+  '/who-we-help/$audience': typeof WhoWeHelpAudienceRoute
+  '/book-author-services/': typeof BookAuthorServicesIndexRoute
+  '/tools/': typeof ToolsIndexRoute
+  '/who-we-help/': typeof WhoWeHelpIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/become-an-expert': typeof BecomeAnExpertRoute
+  '/branding-creative': typeof BrandingCreativeRoute
+  '/crm-automation': typeof CrmAutomationRoute
+  '/experts': typeof ExpertsRoute
+  '/growth-studio': typeof GrowthStudioRoute
+  '/privacy': typeof PrivacyRoute
+  '/resources': typeof ResourcesRoute
+  '/services': typeof ServicesRoute
+  '/start-a-project': typeof StartAProjectRoute
+  '/terms': typeof TermsRoute
+  '/website-development': typeof WebsiteDevelopmentRoute
+  '/work': typeof WorkRoute
+  '/book-author-services/book-marketing': typeof BookAuthorServicesBookMarketingRoute
+  '/tools/visibility-check': typeof ToolsVisibilityCheckRoute
+  '/who-we-help/$audience': typeof WhoWeHelpAudienceRoute
+  '/book-author-services': typeof BookAuthorServicesIndexRoute
+  '/tools': typeof ToolsIndexRoute
+  '/who-we-help': typeof WhoWeHelpIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/become-an-expert': typeof BecomeAnExpertRoute
+  '/branding-creative': typeof BrandingCreativeRoute
+  '/crm-automation': typeof CrmAutomationRoute
+  '/experts': typeof ExpertsRoute
+  '/growth-studio': typeof GrowthStudioRoute
+  '/privacy': typeof PrivacyRoute
+  '/resources': typeof ResourcesRoute
+  '/services': typeof ServicesRoute
+  '/start-a-project': typeof StartAProjectRoute
+  '/terms': typeof TermsRoute
+  '/website-development': typeof WebsiteDevelopmentRoute
+  '/work': typeof WorkRoute
+  '/book-author-services/book-marketing': typeof BookAuthorServicesBookMarketingRoute
+  '/tools/visibility-check': typeof ToolsVisibilityCheckRoute
+  '/who-we-help/$audience': typeof WhoWeHelpAudienceRoute
+  '/book-author-services/': typeof BookAuthorServicesIndexRoute
+  '/tools/': typeof ToolsIndexRoute
+  '/who-we-help/': typeof WhoWeHelpIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/become-an-expert'
+    | '/branding-creative'
+    | '/crm-automation'
+    | '/experts'
+    | '/growth-studio'
+    | '/privacy'
+    | '/resources'
+    | '/services'
+    | '/start-a-project'
+    | '/terms'
+    | '/website-development'
+    | '/work'
+    | '/book-author-services/book-marketing'
+    | '/tools/visibility-check'
+    | '/who-we-help/$audience'
+    | '/book-author-services/'
+    | '/tools/'
+    | '/who-we-help/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/become-an-expert'
+    | '/branding-creative'
+    | '/crm-automation'
+    | '/experts'
+    | '/growth-studio'
+    | '/privacy'
+    | '/resources'
+    | '/services'
+    | '/start-a-project'
+    | '/terms'
+    | '/website-development'
+    | '/work'
+    | '/book-author-services/book-marketing'
+    | '/tools/visibility-check'
+    | '/who-we-help/$audience'
+    | '/book-author-services'
+    | '/tools'
+    | '/who-we-help'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/become-an-expert'
+    | '/branding-creative'
+    | '/crm-automation'
+    | '/experts'
+    | '/growth-studio'
+    | '/privacy'
+    | '/resources'
+    | '/services'
+    | '/start-a-project'
+    | '/terms'
+    | '/website-development'
+    | '/work'
+    | '/book-author-services/book-marketing'
+    | '/tools/visibility-check'
+    | '/who-we-help/$audience'
+    | '/book-author-services/'
+    | '/tools/'
+    | '/who-we-help/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  BecomeAnExpertRoute: typeof BecomeAnExpertRoute
+  BrandingCreativeRoute: typeof BrandingCreativeRoute
+  CrmAutomationRoute: typeof CrmAutomationRoute
+  ExpertsRoute: typeof ExpertsRoute
+  GrowthStudioRoute: typeof GrowthStudioRoute
+  PrivacyRoute: typeof PrivacyRoute
+  ResourcesRoute: typeof ResourcesRoute
+  ServicesRoute: typeof ServicesRoute
+  StartAProjectRoute: typeof StartAProjectRoute
+  TermsRoute: typeof TermsRoute
+  WebsiteDevelopmentRoute: typeof WebsiteDevelopmentRoute
+  WorkRoute: typeof WorkRoute
+  BookAuthorServicesBookMarketingRoute: typeof BookAuthorServicesBookMarketingRoute
+  ToolsVisibilityCheckRoute: typeof ToolsVisibilityCheckRoute
+  WhoWeHelpAudienceRoute: typeof WhoWeHelpAudienceRoute
+  BookAuthorServicesIndexRoute: typeof BookAuthorServicesIndexRoute
+  ToolsIndexRoute: typeof ToolsIndexRoute
+  WhoWeHelpIndexRoute: typeof WhoWeHelpIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +300,163 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/become-an-expert': {
+      id: '/become-an-expert'
+      path: '/become-an-expert'
+      fullPath: '/become-an-expert'
+      preLoaderRoute: typeof BecomeAnExpertRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/branding-creative': {
+      id: '/branding-creative'
+      path: '/branding-creative'
+      fullPath: '/branding-creative'
+      preLoaderRoute: typeof BrandingCreativeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/crm-automation': {
+      id: '/crm-automation'
+      path: '/crm-automation'
+      fullPath: '/crm-automation'
+      preLoaderRoute: typeof CrmAutomationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/experts': {
+      id: '/experts'
+      path: '/experts'
+      fullPath: '/experts'
+      preLoaderRoute: typeof ExpertsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/growth-studio': {
+      id: '/growth-studio'
+      path: '/growth-studio'
+      fullPath: '/growth-studio'
+      preLoaderRoute: typeof GrowthStudioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resources': {
+      id: '/resources'
+      path: '/resources'
+      fullPath: '/resources'
+      preLoaderRoute: typeof ResourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/start-a-project': {
+      id: '/start-a-project'
+      path: '/start-a-project'
+      fullPath: '/start-a-project'
+      preLoaderRoute: typeof StartAProjectRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/website-development': {
+      id: '/website-development'
+      path: '/website-development'
+      fullPath: '/website-development'
+      preLoaderRoute: typeof WebsiteDevelopmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work': {
+      id: '/work'
+      path: '/work'
+      fullPath: '/work'
+      preLoaderRoute: typeof WorkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/book-author-services/': {
+      id: '/book-author-services/'
+      path: '/book-author-services'
+      fullPath: '/book-author-services/'
+      preLoaderRoute: typeof BookAuthorServicesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/book-author-services/book-marketing': {
+      id: '/book-author-services/book-marketing'
+      path: '/book-author-services/book-marketing'
+      fullPath: '/book-author-services/book-marketing'
+      preLoaderRoute: typeof BookAuthorServicesBookMarketingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/': {
+      id: '/tools/'
+      path: '/tools'
+      fullPath: '/tools/'
+      preLoaderRoute: typeof ToolsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/visibility-check': {
+      id: '/tools/visibility-check'
+      path: '/tools/visibility-check'
+      fullPath: '/tools/visibility-check'
+      preLoaderRoute: typeof ToolsVisibilityCheckRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/who-we-help/': {
+      id: '/who-we-help/'
+      path: '/who-we-help'
+      fullPath: '/who-we-help/'
+      preLoaderRoute: typeof WhoWeHelpIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/who-we-help/$audience': {
+      id: '/who-we-help/$audience'
+      path: '/who-we-help/$audience'
+      fullPath: '/who-we-help/$audience'
+      preLoaderRoute: typeof WhoWeHelpAudienceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  BecomeAnExpertRoute: BecomeAnExpertRoute,
+  BrandingCreativeRoute: BrandingCreativeRoute,
+  CrmAutomationRoute: CrmAutomationRoute,
+  ExpertsRoute: ExpertsRoute,
+  GrowthStudioRoute: GrowthStudioRoute,
+  PrivacyRoute: PrivacyRoute,
+  ResourcesRoute: ResourcesRoute,
+  ServicesRoute: ServicesRoute,
+  StartAProjectRoute: StartAProjectRoute,
+  TermsRoute: TermsRoute,
+  WebsiteDevelopmentRoute: WebsiteDevelopmentRoute,
+  WorkRoute: WorkRoute,
+  BookAuthorServicesBookMarketingRoute: BookAuthorServicesBookMarketingRoute,
+  ToolsVisibilityCheckRoute: ToolsVisibilityCheckRoute,
+  WhoWeHelpAudienceRoute: WhoWeHelpAudienceRoute,
+  BookAuthorServicesIndexRoute: BookAuthorServicesIndexRoute,
+  ToolsIndexRoute: ToolsIndexRoute,
+  WhoWeHelpIndexRoute: WhoWeHelpIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
