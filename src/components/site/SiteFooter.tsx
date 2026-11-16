@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { departments, audiences } from "@/data/site";
+import { departments, audiences, type DepartmentPath } from "@/data/site";
 import { Logo } from "./Logo";
 
 const explore = [
@@ -72,7 +72,9 @@ function FooterGroup({ title, children }: { title: string; children: React.React
   );
 }
 
-function FooterLink({ to, children }: { to: React.ComponentProps<typeof Link>["to"]; children: React.ReactNode }) {
+type FooterTo = (typeof explore)[number]["to"] | DepartmentPath | "/privacy" | "/terms";
+
+function FooterLink({ to, children }: { to: FooterTo; children: React.ReactNode }) {
   return (
     <li>
       <Link to={to} className="text-sm text-ink-foreground/70 transition-colors hover:text-ink-foreground">
